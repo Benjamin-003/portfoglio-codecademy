@@ -1,0 +1,24 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.about-me {
+  display: flex;
+}
+
+.cv {
+  display: inline;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  padding-left: 100px;
+}
+
+.experiences,.formations  { 
+  border-top:1px solid;
+}
+
+
