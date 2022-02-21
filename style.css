@@ -1,24 +1,80 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; 
+}
+
+body{
+  background-image: url('https://media.istockphoto.com/photos/crumpled-paper-picture-id503486006?k=20&m=503486006&s=170667a&w=0&h=k259NP3Ye7F1NQ1CBFaPmNRJKtMFkXFlrOA30QlCfe8=');
   text-align: justify;
 }
 
-.about-me {
-  display: flex;
+header{
+  background-image: url("https://d31nhj1t453igc.cloudfront.net/cloudinary/2021/Dec/27/2IQ6jZbLsHNDBiq7I1lU.jpg");
+  box-shadow: 0px 0px 50px #333;
+  color:azure;
+  text-align: center;
 }
 
-.cv {
-  display: inline;
+li{
+  line-height: 200%;
+  text-align: center;
+  list-style-position: inside;
 }
 
 img {
   height: 150px;
   width: 150px;
-  padding-left: 100px;
+  border: 3px solid #fff;
+    box-shadow: 0px 0px 10px rgb(15, 186, 216);
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
 }
 
-.experiences,.formations  { 
+.experiences,.formations,.skills  { 
   border-top:1px solid;
+  margin-top: 50px;
 }
 
+.icon{
+  font-size: 3em;
+}
 
+img:hover{
+  border-radius: 0;
+  box-shadow: 0px 0px 20px rgb(240, 9, 97);
+  height: 200px;
+  width: 200px;
+  transition: all 500ms ease-in 0.5s;
+}
+
+footer{
+  background-image: url("https://s3.envato.com/files/225693685/Preview_Image_00000.jpg");
+  padding:50px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(35, 40, 56);
+  transition: all 250ms linear;
+}
+
+a,button{
+  color:palegoldenrod
+}
+
+button:hover {
+  background-color:darkgreen;
+  width: 400px;
+  height: 100px;
+  transition: all 750ms linear;
+}
+
+a,button:active{
+  color:darkred
+}
