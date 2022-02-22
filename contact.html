@@ -37,7 +37,7 @@
     </div>
   </body>
   <footer id="return">
-    <button id="leave"><a href="#">Retour</a></button>
+    <button id="leave">Retour</button>
   </footer>
   <script>
     const leaveElement = document.getElementById("leave");
@@ -46,9 +46,7 @@
         "<i class='fa-solid fa-arrow-right-from-bracket'></i>";
     });
     leaveElement.addEventListener("click", function (event) {
-      window.location.replace(
-        "file:///C:/Users/benjamin.boissin/Documents/Projet%20Codademy/index.html"
-      );
+      window.location.replace("index.html");
     });
     leaveElement.addEventListener("mouseleave", function (event) {
       leaveElement.innerHTML = "Retour";
