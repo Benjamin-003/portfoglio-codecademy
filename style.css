@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box; 
+  margin-bottom: 0px;
 }
 
 body{
@@ -37,10 +38,18 @@ img {
 
 .icon{
   font-size: 3em;
+  transition: transform .5s ease-in-out;
+}
+
+.icon::before{
+  padding-left: 10px;
+}
+.icon:hover{
+  transform: rotate(360deg);
 }
 
 img:hover{
-  border-radius: 0;
+  border-radius: 15%;
   box-shadow: 0px 0px 20px rgb(240, 9, 97);
   height: 200px;
   width: 200px;
@@ -64,17 +73,35 @@ button{
   transition: all 250ms linear;
 }
 
-a,button{
-  color:palegoldenrod
+#return{
+  margin-top: 300px;
+  display: flex;
 }
 
 button:hover {
   background-color:darkgreen;
-  width: 400px;
-  height: 100px;
   transition: all 750ms linear;
 }
 
-a,button:active{
-  color:darkred
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ":\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
