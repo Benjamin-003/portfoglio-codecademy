@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Me contacter</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <header>
     <h1>CV de Benjamin BOISSIN</h1>
@@ -21,19 +24,34 @@
     </div>
   </header>
   <body>
-   <div class="contact">
-    <h2>Contact</h2>
+    <div class="contact">
+      <h2>Contact</h2>
       <div class="icone">
         <a target="_blank" href="https://www.linkedin.com/">
           <i class="fab fa-linkedin icon"></i>
         </a>
         <a href="mailto:fauxmail@mail.net">
-        <i class="fas fa-envelope-square icon"></i>
+          <i class="fas fa-envelope-square icon"></i>
         </a>
       </div>
-   </div> 
+    </div>
   </body>
   <footer id="return">
-    <button><a href="index.html">Mon CV</a></button>
+    <button id="leave"><a href="#">Retour</a></button>
   </footer>
+  <script>
+    const leaveElement = document.getElementById("leave");
+    leaveElement.addEventListener("mouseover", function (event) {
+      leaveElement.innerHTML =
+        "<i class='fa-solid fa-arrow-right-from-bracket'></i>";
+    });
+    leaveElement.addEventListener("click", function (event) {
+      window.location.replace(
+        "file:///C:/Users/benjamin.boissin/Documents/Projet%20Codademy/index.html"
+      );
+    });
+    leaveElement.addEventListener("mouseleave", function (event) {
+      leaveElement.innerHTML = "Retour";
+    });
+  </script>
 </html>
