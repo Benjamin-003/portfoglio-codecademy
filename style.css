@@ -36,9 +36,13 @@ img {
   margin-top: 50px;
 }
 
+#html,#css,#js,#angular,#php{
+  cursor: pointer;
+}
+
 .icon{
   font-size: 3em;
-  transition: transform .5s ease-in-out;
+  transition: transform .25s ease-in-out;
 }
 
 .icon::before{
@@ -81,27 +85,4 @@ button{
 button:hover {
   background-color:darkgreen;
   transition: all 750ms linear;
-}
-
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: ":\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
 }
